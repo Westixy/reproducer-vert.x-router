@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>try static router</title>
+</head>
+<body>
+  <div id="message">Waiting for script load</div>
+  <script>
+    window.messageBlock = document.getElementById("message");
+    window.waitTimeout = setTimeout(() => {
+      messageBlock.innerText = "Failed to get script";
+      messageBlock.style.color = "red";
+    }, 1000);
+  </script>
+  <script src="static/check.js"></script>
+</body>
+</html>
