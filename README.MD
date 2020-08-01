@@ -16,3 +16,7 @@ Reproduce a little change in the router behaviour between 3.9.1 and 3.9.2
 3. Go to `http://localhost:8888/static`
 4. Should redirect using a 301 HTTP Code to `http://localhost:8888/static/`
 5. Should display `Failed to get script`
+
+
+Issue: https://github.com/vert-x3/vertx-web/issues/1674
+
